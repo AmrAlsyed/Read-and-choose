@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start" : "index.html"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AmrAlsyed/Read-and-choose/issues"
   },
-  "homepage": "https://github.com/AmrAlsyed/Read-and-choose#readme"
+  "homepage": "https://github.com/AmrAlsyed/Read-and-choose#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

@@ -8,17 +8,17 @@
   <title>Educational RC</title>
 
   <!-- global CSS Starts -->
-  <link rel="stylesheet" href="css/lib/bootstrap.min.css" type="text/css" />
-  <link rel="stylesheet" href="css/main.css" type="text/css" />
-  <link rel="stylesheet" href="css/template/p75_ex12.css" type="text/css" />
+  <link rel="stylesheet" href="/css/lib/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="/css/main.css" type="text/css" />
+  <link rel="stylesheet" href="/css/template/p75_ex12.css" type="text/css" />
 
   <!-- global CSS End -->
 
   <!-- global JS Starts -->
-  <script src="js/lib/jquery_v3.3.1.js"></script>
-  <script src="js/lib/bootstrap.min.js"></script>
+  <script src="/js/lib/jquery_v3.3.1.js"></script>
+  <script src="/js/lib/bootstrap.min.js"></script>
 
-  <script src="js/lib/underscore-min.js"></script>
+  <script src="/js/lib/underscore-min.js"></script>
   <!-- global JS End -->
  
 
@@ -30,20 +30,20 @@
     <div class="container-fluid noPadding">
       <!-- header start -->
       <div class="col-xs-12 noPadding header">
-        <div class="box1 title hide" data-audioSrc="assets/audio/sample.mp3" onClick="fnTitleAudioClick(this)">
-          <img src="assets/images/audio_icon.png" class="img-responsive" style="cursor: pointer"/></div>
+        <div class="box1 title hide" data-audioSrc="/assets/audio/sample.mp3" onClick="fnTitleAudioClick(this)">
+          <img src="/assets/images/audio_icon.png" class="img-responsive" style="cursor: pointer"/></div>
         <div class="boxhead5 headingTitle">
           <h1 style="font-weight: bold;">Read and choose.</h1>
         </div>
 
         <div class="box1">
           <div class="resourseBtn hide">
-            <img src="assets/images/resourse_icon.png" class="img-responsive" />
+            <img src="/assets/images/resourse_icon.png" class="img-responsive" />
           </div>
         </div>
 
         <div class="box1 pull-right helpBtn hide">
-          <img src="assets/images/help_icon.png" class="img-responsive" />
+          <img src="/assets/images/help_icon.png" class="img-responsive" />
         </div>
       </div>
       <audio id="audioPlayer1" preload="auto" src=""></audio>
@@ -73,7 +73,7 @@
 					</div>
 					
 					<div class="optionContainer">
-                        <img class="ratimg" src="assets/images/p75e12/FP_AW-42.jpg" style="    width: 390px;
+                        <img class="ratimg" src="/assets/images/p75e12/FP_AW-42.jpg" style="    width: 390px;
 ">
                         <div class="option option_0" style="position: absolute;left: 14px;"> Which word means …</div>
 
@@ -106,8 +106,8 @@
                         
                
 					
-						<div class="correctAnsAudio" data-audioSrc="assets/audio/correct.mp3"></div>
-						<div class="incorrectAnsAudio" data-audioSrc="assets/audio/incorrect.mp3"></div>
+						<div class="correctAnsAudio" data-audioSrc="/assets/audio/correct.mp3"></div>
+						<div class="incorrectAnsAudio" data-audioSrc="/assets/audio/incorrect.mp3"></div>
 					</div>
                 </div>
 				
@@ -127,7 +127,7 @@
         <div class="col-xs-12 footer">
           <div class="box1">
             <div class="reloadBtnAll">
-              <img src="assets/images/replay_icon.png" class="img-responsive" />
+              <img src="/assets/images/replay_icon.png" class="img-responsive" />
             </div>
           </div>
 
@@ -136,8 +136,8 @@
               <div class="col-xs-12 controlsDiv">                
         <div class="controlsinline">
                 <div id="pButton" class="col-xs-1 noPadding" >
-                  <img src="assets/images/play.png" class="img-responsive playImg" onClick="fnStartAudio('play');"/>
-                  <img src="assets/images/pause.png" class="img-responsive pauseImg" onClick="fnStartAudio('pause');"/>
+                  <img src="/assets/images/play.png" class="img-responsive playImg" onClick="fnStartAudio('play');"/>
+                  <img src="/assets/images/pause.png" class="img-responsive pauseImg" onClick="fnStartAudio('pause');"/>
                 </div>
                 <div class="col-xs-11" id="audioDrag">
                   <div class="slidecontainer">
@@ -152,19 +152,19 @@
           <div class="box1">
             
             <div class="reloadBtnScreen">
-              <img src="assets/images/reload_icon.png" class="img-responsive" />
+              <img src="/assets/images/reload_icon.png" class="img-responsive" />
             </div>
           </div>
 
           <div class="box2">
             <div class="showAnsBtn">
-              <img src="assets/images/showAns_icon.png" class="img-responsive" />
+              <img src="/assets/images/showAns_icon.png" class="img-responsive" />
             </div>
           </div>
 
           <div class="box1">
             <div class="backBtn">
-              <img src="assets/images/back_icon.png" class="img-responsive" onClick="stopAudio();"/>
+              <img src="/assets/images/back_icon.png" class="img-responsive" onClick="stopAudio();"/>
             </div>
           </div>
 
@@ -174,7 +174,7 @@
 
           <div class="box1">
             <div class="nextBtn">
-              <img src="assets/images/next_icon.png" class="img-responsive inlineblock" onClick="stopAudio();"/>
+              <img src="/assets/images/next_icon.png" class="img-responsive inlineblock" onClick="stopAudio();"/>
             </div>
           </div>
 
@@ -186,16 +186,16 @@
 
       <div class="resoursePopup" style="display: none;">
         <div class="resourseContainer">
-          <img class="closeBtn" src="assets/images/close_icon.png">
+          <img class="closeBtn" src="/assets/images/close_icon.png">
           <div class="col-xs-12 noPadding" style="overflow: auto;width:100%;height:100%;padding:0;">
-            <img src="assets/images/dummy.jpg" />
+            <img src="/assets/images/dummy.jpg" />
           </div>
         </div>
       </div>
 
       <div class="helpPopup" style="display: none;">
         <div class="helpContainer">
-          <img class="closeBtn" src="assets/images/close_icon.png">
+          <img class="closeBtn" src="/assets/images/close_icon.png">
           <div class="col-xs-12" style="overflow: auto;width:100%;height:100%;font-size:30px;">
             <p>Help content goes here.</p>
           </div>
@@ -213,7 +213,7 @@
 		fnTemplate4_v1($('div.active'));
 	});  
   </script>
-  <script type="text/javascript" src="js/template/p75_ex12.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="/js/template/p75_ex12.js"></script>
+  <script type="text/javascript" src="/js/index.js"></script>
 </body>	
 </html>
