@@ -1,0 +1,107 @@
+.template4_v1 {font-size:45px;height:100%;}
+.template4_v1 .itemContainer{margin-top:45px;}
+.template4_v1 .questionContainer{text-align: center;
+    font-size: 34px;}
+.template4_v1 .optionContainer{font-size: 31px;/*! font-weight: bold; */top: 25px;position: relative;}
+.template4_v1 .optionContainer .optText{width: auto;height:80px;}
+.template4_v1 .optionContainer .optClick{position:relative;width: 225px;height:46px;display: inline-block;background:url('../../assets/images/p75e12/line.png') no-repeat;padding-left: 0;cursor:pointer;background-position: 0px 1px;}
+.template4_v1 .optionContainer .optClick.filled{cursor: default !important;text-align: center;}
+.template4_v1  .optionContainer .option {margin-bottom: 15px;height:80px;position: absolute;}
+.template4_v1  .optionContainer .option span:nth-child(1) {margin-left:-45px;}
+.template4_v1  .optionContainer .option_1 {width: 65%;
+    top: 53px;
+    left: 60px;}
+.template4_v1  .optionContainer .option_2 {      left: 60px;
+    top: 128px;
+}
+.template4_v1  .optionContainer .option_3 {           top: 204px;
+    width: 800px;
+    right: 290px;}
+.template4_v1  .optionContainer .option_4 {       top: 332px;
+    right: 716px;
+
+}
+.template4_v1  .optionContainer .option_5 {   top: 408px;
+    right: 289px;
+    width: 800px;}
+.template4_v1  .optionContainer .option_6 {        top: 87px;
+    right: 632px;}
+    .template4_v1  .optionContainer .option_7 {      top: 159px;
+        right: 568px;
+    
+    }
+        .template4_v1  .optionContainer .option_8 {     top: 242px;
+            right: 658px;}
+            .template4_v1  .optionContainer .option_9 {          top: 378px;
+                right: 512px;}
+                .template4_v1  .optionContainer .option_10 {          top: 460px;
+                    right: 337px;}
+.template4_v1  .optionContainer .option_0 {      top: -22px;
+    width: 450px;
+    right: 696px;
+}
+.template4_v1 .questionContainer .question{border: 3px solid #f5821f;padding: 5px 40px;border-radius: 20px;font-weight: bold;    margin-left: 20px;cursor: pointer;background:#ffffff;}
+.template4_v1 .questionContainer .question_1{}
+.template4_v1 .questionContainer .question_2{}
+.template4_v1 .questionContainer .question_3{}
+.template4_v1 .questionContainer .question_4{}
+.template4_v1  .optionContainer .clssImg {position: absolute;}
+.template4_v1  .optionContainer .img_1 {top: 97px;left: 254px;}
+.template4_v1  .optionContainer .img_2 {top: 341px;left: 291px;}
+.template4_v1  .optionContainer .img_3 {top: 97px;right: 67px;}
+.template4_v1  .optionContainer .img_4 {top: 386px;right: 48px;}
+.ratimg{
+    position: relative;
+    left: 727px;
+    top: -62px;
+
+}
+
+
+ /* .template4_v1 .optionContainer .option_1 .optText{width:120px} */
+.template4_v1 .option_5 .showAnswerTickMark, .template4_v1 .option_5 .showAnswerCrossMark{right:-60px;}
+.template4_v1 .tic_6 .showAnswerTickMark, .template4_v1 .tic_6 .showAnswerCrossMark{top:-35px}
+.template4_v1 .option_1 .showAnswerTickMark, .template4_v1 .option_1 .showAnswerCrossMark{     top: 0px;
+    right: -1px;
+}
+    .template4_v1 .option_2 .showAnswerTickMark, .template4_v1 .option_2 .showAnswerCrossMark{   top: 0px;
+        right: -1px;}
+        .template4_v1 .option_3 .showAnswerTickMark, .template4_v1 .option_3 .showAnswerCrossMark{  top: 0px;
+            right: -1px;}
+        .template4_v1 .option_4 .showAnswerTickMark, .template4_v1 .option_4 .showAnswerCrossMark{   top: 0px;
+            right: -1px;}
+
+            .template4_v1 .option_5 .showAnswerTickMark, .template4_v1 .option_5 .showAnswerCrossMark{   top: 0px;
+                right: -1px;}
+
+                .template4_v1 .option_6 .showAnswerTickMark, .template4_v1 .option_6 .showAnswerCrossMark{   top: 0px;
+                    right: -1px;}
+
+                    .template4_v1 .option_7 .showAnswerTickMark, .template4_v1 .option_7 .showAnswerCrossMark{   top: 0px;
+                        right: -1px;}
+
+
+                        .template4_v1 .option_8 .showAnswerTickMark, .template4_v1 .option_8 .showAnswerCrossMark{ top: 0px;
+                            right: -1px;}
+
+                            .template4_v1 .option_9 .showAnswerTickMark, .template4_v1 .option_9 .showAnswerCrossMark{top: 0px;
+                                right: -1px;}
+
+                                .template4_v1 .option_10 .showAnswerTickMark, .template4_v1 .option_10 .showAnswerCrossMark{   top: 0px;
+                                    right: -1px;}
+.template4_v1 .showAnswerTickMark, .template4_v1 .showAnswerCrossMark{position: absolute;top: -2px;right: -21px;text-align: center;}
+.template4_v1 .showAnswerCrossMark{animation-name: crossBlinker;animation-duration: 1s;opacity:0;}
+.template4_v1 .imaContainer{position:relative;left:40px;}
+.template4_v1 .optionContainer{position:relative;left:32px;    top: 82px;}
+@keyframes crossBlinker {
+    0% {opacity:1;}
+    25% {opacity:0;}
+    50% {opacity:1;}    
+    100% {opacity:0;}
+}
+
+
+.template4_v1  .optionContainer .option_1 .pageAudioIcon{top: 80px;right: 40px;}
+.template4_v1  .optionContainer .option_2 .pageAudioIcon{top: 80px;right: 40px;}
+.template4_v1  .optionContainer .option_3 .pageAudioIcon{top: 80px;right: 90px;}
+.template4_v1  .optionContainer .option_4 .pageAudioIcon{top: 80px;right: 70px;}

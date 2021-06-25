@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <title>Educational RC</title>
+
+  <!-- global CSS Starts -->
+  <link rel="stylesheet" href="css/lib/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/main.css" type="text/css" />
+  <link rel="stylesheet" href="css/template/p75_ex12.css" type="text/css" />
+
+  <!-- global CSS End -->
+
+  <!-- global JS Starts -->
+  <script src="js/lib/jquery_v3.3.1.js"></script>
+  <script src="js/lib/bootstrap.min.js"></script>
+
+  <script src="js/lib/underscore-min.js"></script>
+  <!-- global JS End -->
+ 
+
+</head>
+<body>
+<div id="container">
+  <div class="page_content">
+
+    <div class="container-fluid noPadding">
+      <!-- header start -->
+      <div class="col-xs-12 noPadding header">
+        <div class="box1 title hide" data-audioSrc="assets/audio/sample.mp3" onClick="fnTitleAudioClick(this)">
+          <img src="assets/images/audio_icon.png" class="img-responsive" style="cursor: pointer"/></div>
+        <div class="boxhead5 headingTitle">
+          <h1 style="font-weight: bold;">Read and choose.</h1>
+        </div>
+
+        <div class="box1">
+          <div class="resourseBtn hide">
+            <img src="assets/images/resourse_icon.png" class="img-responsive" />
+          </div>
+        </div>
+
+        <div class="box1 pull-right helpBtn hide">
+          <img src="assets/images/help_icon.png" class="img-responsive" />
+        </div>
+      </div>
+      <audio id="audioPlayer1" preload="auto" src=""></audio>
+      <audio id="audioPlayer2" preload="auto" src=""></audio>
+      <!-- header end -->
+
+      <!-- page start -->
+      <section class="col-xs-12 pageContainer">
+        <div class="pageBg col-xs-12"></div>
+        <div class="pageContent col-xs-12">
+          <div id="myCarousel" class="carousel slide col-xs-12 template4_v1" data-ride="carousel" data-interval="0" data-wrap="false" data-id="template4_v1">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" >
+              <div class="item active" data-audioSrc="" style="top: 28px;">
+                <div class="itemContainer">
+					<div class="questionContainer" style="top: -26px;
+          position: relative;
+          left: -10px;">
+						
+            <span class="question question_1">cold</span>
+            <span class="question question_2">decide</span>  
+            <span class="question question_3">race</span> 
+            <span class="question question_4">noise</span>
+            <span class="question question_5">prize</span>
+        
+					</div>
+					
+					<div class="optionContainer">
+                        <img class="ratimg" src="assets/images/p75e12/FP_AW-42.jpg" style="    width: 390px;
+">
+                        <div class="option option_0" style="position: absolute;left: 14px;"> Which word means …</div>
+
+						
+            <div class="option option_1"><span><span style="font-weight: bold;">a)</span> &nbsp;<span style="position: relative;left: 2px;">when you see who is the fastest?
+              </span> </span><span data-Answer="race" class="optClick" style="text-align: center;">&nbsp;</span><span class="optText"></span> </div>
+
+				
+						
+					
+						
+						<div class="option option_2 "><span><span style="font-weight: bold;">b)</span> &nbsp;<span>something you get if you win?</span> </span><span data-Answer="prize" class="optClick" style="text-align: center;">&nbsp;</span><span class="optText"></span> 
+						</div>
+					
+						
+                        <div class="option option_3 "><span><span style="font-weight: bold;">c)</span> &nbsp;<span style="position: relative;left: 2px;">an illness people often get in<br>
+                          <span style="    position: relative;
+                          left: -48px;
+                          top: 8px;">
+                           winter?</span></span> </span><span data-Answer="cold" class="optClick" style="text-align: center;    position: relative;
+                           left: -45px;">&nbsp;</span><span class="optText"></span> 
+						</div>
+			
+						
+                        <div class="option option_4 "><span><span style="font-weight: bold;">d)</span> &nbsp;<span style="position: relative;left: -0.5px;">a loud sound?</span> </span><span data-Answer="noise" class="optClick" style="text-align: center;">&nbsp;</span><span class="optText"></span>  
+						</div>
+            
+                        <div class="option option_5 "><span><span style="font-weight: bold;">e)</span> &nbsp;<span style="position: relative;left: 1.5px;">when you make a choice about something?</span> </span><span data-Answer="decide" class="optClick" style="text-align: center;">&nbsp;</span><span class="optText"></span>  
+						</div>
+                        
+               
+					
+						<div class="correctAnsAudio" data-audioSrc="assets/audio/correct.mp3"></div>
+						<div class="incorrectAnsAudio" data-audioSrc="assets/audio/incorrect.mp3"></div>
+					</div>
+                </div>
+				
+              </div>
+              
+            </div>
+          </div>
+            
+            
+            
+        </div>
+      </section>
+      <!-- page end -->
+
+      <!-- footer start -->
+      <div class="row">
+        <div class="col-xs-12 footer">
+          <div class="box1">
+            <div class="reloadBtnAll">
+              <img src="assets/images/replay_icon.png" class="img-responsive" />
+            </div>
+          </div>
+
+          <div class="box3">
+            <div class="audioPlayerContainer" id="audioDragContainer">
+              <div class="col-xs-12 controlsDiv">                
+        <div class="controlsinline">
+                <div id="pButton" class="col-xs-1 noPadding" >
+                  <img src="assets/images/play.png" class="img-responsive playImg" onClick="fnStartAudio('play');"/>
+                  <img src="assets/images/pause.png" class="img-responsive pauseImg" onClick="fnStartAudio('pause');"/>
+                </div>
+                <div class="col-xs-11" id="audioDrag">
+                  <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="myRange" step="0.1">                   
+                  </div> 
+          </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box1">
+            
+            <div class="reloadBtnScreen">
+              <img src="assets/images/reload_icon.png" class="img-responsive" />
+            </div>
+          </div>
+
+          <div class="box2">
+            <div class="showAnsBtn">
+              <img src="assets/images/showAns_icon.png" class="img-responsive" />
+            </div>
+          </div>
+
+          <div class="box1">
+            <div class="backBtn">
+              <img src="assets/images/back_icon.png" class="img-responsive" onClick="stopAudio();"/>
+            </div>
+          </div>
+
+          <div class="box4">
+            <div class="pageNumber">1 of 2</div>
+          </div>
+
+          <div class="box1">
+            <div class="nextBtn">
+              <img src="assets/images/next_icon.png" class="img-responsive inlineblock" onClick="stopAudio();"/>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <!-- footer end -->
+
+
+      <div class="resoursePopup" style="display: none;">
+        <div class="resourseContainer">
+          <img class="closeBtn" src="assets/images/close_icon.png">
+          <div class="col-xs-12 noPadding" style="overflow: auto;width:100%;height:100%;padding:0;">
+            <img src="assets/images/dummy.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="helpPopup" style="display: none;">
+        <div class="helpContainer">
+          <img class="closeBtn" src="assets/images/close_icon.png">
+          <div class="col-xs-12" style="overflow: auto;width:100%;height:100%;font-size:30px;">
+            <p>Help content goes here.</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+  <script type="text/javascript">  
+	$(function () {
+		fnSetPlayer();
+		fnTemplate4_v1($('div.active'));
+	});  
+  </script>
+  <script type="text/javascript" src="js/template/p75_ex12.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</body>	
+</html>
